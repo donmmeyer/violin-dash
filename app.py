@@ -302,7 +302,7 @@ from dash import html
 
 # Dash app setup
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server = app.server
 # Define radio options for each group
 age_options = [{'label': '39 and younger', 'value': '39 and younger'}, 
                {'label': '40 and older', 'value': '40 and older'}, 
